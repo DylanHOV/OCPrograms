@@ -3,8 +3,7 @@ BloodCtrl
 Automated Blood Magic Slate Creation
 Version: 0.1.1
 Author: Haybale100
-License: CC BY 4.0
- 
+License: CC BY 4.0 
 How to use: https://oc.cil.li/index.php?/topic/1736-bloodctrl-v01-automated-blood-magic-slate-creation/
 ]]
  
@@ -276,14 +275,14 @@ while true do
     currentTank = transpose.getFluidInTank(altarSide, altarTank).amount
     
     if BloodAltarTier >= itemInfo[1].tier and stackInfo[1].label == itemInfo[1].name and stackInfo[1].size < slateBCount and currentTank >= itemInfo[1].blood then
-        BlankSlate()
+        BlankSlate(Fix)
     elseif BloodAltarTier >= itemInfo[2].tier and stackInfo[2].label == itemInfo[2].name and stackInfo[2].size < slateRCount and currentTank >= itemInfo[2].blood then
-        ReinforcedSlate()
+        ReinforcedSlate(Fix)
     elseif BloodAltarTier >= itemInfo[3].tier and stackInfo[3].label == itemInfo[3].name and stackInfo[3].size < slateICount and currentTank >= itemInfo[3].blood then
-        ImbuedSlate()
+        ImbuedSlate(Fix)
     elseif BloodAltarTier >= itemInfo[4].tier and stackInfo[4].label == itemInfo[4].name and stackInfo[4].size < slateDCount and currentTank >= itemInfo[4].blood then
-        DemonicSlate()
+        DemonicSlate(Fix)
     elseif BloodAltarTier >= itemInfo[5].tier and stackInfo[5].label == itemInfo[5].name and stackInfo[5].size < slateECount and currentTank >= itemInfo[5].blood then
-        EtherealSlate()
+        EtherealSlate(Fix)
     end
 end
