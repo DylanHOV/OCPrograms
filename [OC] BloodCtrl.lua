@@ -266,23 +266,3 @@ function writeToTerm()
     term.write("Making: ")
 end
  
- 
-term.clear()
-while true do
-    SetDefaultStackInfo()
-    writeToTerm(" ")
-    
-    currentTank = transpose.getFluidInTank(altarSide, altarTank).amount
-    
-    if BloodAltarTier >= itemInfo[1].tier and stackInfo[1].label == itemInfo[1].name and stackInfo[1].size < slateBCount and currentTank >= itemInfo[1].blood then
-        BlankSlate(Fix)
-    elseif BloodAltarTier >= itemInfo[2].tier and stackInfo[2].label == itemInfo[2].name and stackInfo[2].size < slateRCount and currentTank >= itemInfo[2].blood then
-        ReinforcedSlate(Fix)
-    elseif BloodAltarTier >= itemInfo[3].tier and stackInfo[3].label == itemInfo[3].name and stackInfo[3].size < slateICount and currentTank >= itemInfo[3].blood then
-        ImbuedSlate(Fix)
-    elseif BloodAltarTier >= itemInfo[4].tier and stackInfo[4].label == itemInfo[4].name and stackInfo[4].size < slateDCount and currentTank >= itemInfo[4].blood then
-        DemonicSlate(Fix)
-    elseif BloodAltarTier >= itemInfo[5].tier and stackInfo[5].label == itemInfo[5].name and stackInfo[5].size < slateECount and currentTank >= itemInfo[5].blood then
-        EtherealSlate(Fix)
-    end
-end
