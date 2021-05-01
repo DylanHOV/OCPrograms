@@ -277,9 +277,9 @@ end
 NetSetup()
 while true do
     if message == "Slate1"
-        BlankSlate()
+        BlankSlate() then
     end
-    elseif message == "Slate2"
+    elseif message == "Slate2" then
         ReinforcedSlate()
     end
     elseif message == "Slate3" then
