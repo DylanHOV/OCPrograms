@@ -265,4 +265,3 @@ function writeToTerm()
     term.clearLine()
     term.write("Making: ")
 end
- 
