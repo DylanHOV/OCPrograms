@@ -278,12 +278,17 @@ NetSetup()
 while true do
     if message == "Slate1"
         BlankSlate()
+    end
     elseif message == "Slate2"
         ReinforcedSlate()
-    elseif message == "Slate3"
+    end
+    elseif message == "Slate3" then
         ImbuedSlate()
+    end
     elseif message == "Slate4"
         DemonicSlate()
+    end
     elseif message == "Slate5"
         EtherealSlate()
+    end
 end
